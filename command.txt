@@ -1,0 +1,45 @@
+//reset mcu
+06 41 00 AA 55 FF 45
+
+//0x000E write WDT_EN value
+06 41 40 00 0E 00 95
+
+//0x000F write FW_Ver value
+06 41 40 00 0F 00 96
+
+//0x0010 read address page
+06 41 20 00 00 FF 66
+06 41 20 00 10 FF 76
+06 41 20 00 20 FF 86
+06 41 20 00 30 FF 96
+
+//0x000F read FW_Ver value
+06 41 30 00 0F FF 85
+
+//0x0030 write freqoffset value
+06 41 40 00 30 C2 79
+
+//0x0010 write address
+15 41 50 00 10 37 34 00 00 FF FF FF FF 38 34 00 00 00 00 00 00 89
+
+//sw tx , set fm tx
+06 41 60 FF FF FF A4
+
+//sw rx , set fm rx & rssi
+06 41 70 FF FF FF B4
+
+//sw rf done
+06 41 80 FF FF FF C4
+
+//0x0000 clear page
+15 41 50 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 96
+
+//test motor drive
+06 41 F1 FF FF FF 35
+06 41 F2 FF FF FF 36
+06 41 F3 FF FF FF 37
+
+//goto programming mode
+06 41 F0 FF FF FF 34
+
+

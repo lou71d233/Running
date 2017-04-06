@@ -1,0 +1,669 @@
+# depslib dependency file v1.0
+1466668248 source:d:\workspaces\tp20ms\ax_radio_lab_output\config.c
+	"../COMMON/easyax5043.h"
+	<libmftypes.h>
+	<libmfcrc.h>
+
+1466495366 d:\workspaces\tp20ms\common\easyax5043.h
+	"axradio.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+
+1464999971 d:\workspaces\tp20ms\common\axradio.h
+	<libmftypes.h>
+
+1466407347 source:d:\workspaces\tp20ms\ax_radio_lab_output\configms.c
+	"configms.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+
+1464937152 source:d:\workspaces\tp20ms\ax_radio_lab_output\configvcocal.c
+	"libmftypes.h"
+
+1463728112 source:d:\workspaces\tp20ms\common\display_com0.c
+	"display_com0.h"
+	<ax8052f143.h>
+	<libmf.h>
+	<libmfuart.h>
+	<libmfuart0.h>
+
+1463645244 d:\workspaces\tp20ms\common\display_com0.h
+	<libmf.h>
+
+1464930616 source:d:\workspaces\tp20ms\common\easyax5043.c
+	"easyax5043.h"
+	<libmfcrc.h>
+	<libmfradio.h>
+	<libmfwtimer.h>
+	<stdlib.h>
+	<string.h>
+	<libmfdbglink.h>
+
+1463645244 source:d:\workspaces\tp20ms\common\misc.c
+	<ax8052.h>
+	<libmftypes.h>
+	<libmfwtimer.h>
+	<libaxlcd2.h>
+	"misc.h"
+	"../COMMON/axradio.h"
+	"display_com0.h"
+
+1463645244 d:\workspaces\tp20ms\common\misc.h
+	<libmftypes.h>
+	"../COMMON/axradio.h"
+
+1464750935 source:d:\workspaces\tp20ms\ms\display_ms.c
+	"../AX_Radio_Lab_output/configms.h"
+	<ax8052.h>
+	<libmftypes.h>
+	<libaxlcd2.h>
+	<libmfwtimer.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/misc.h"
+
+1466668224 d:\workspaces\tp20ms\ax_radio_lab_output\configms.h
+	"../COMMON/axradio.h"
+
+1464750916 source:d:\workspaces\tp20ms\ms\lposc_ms.c
+	<ax8052f143.h>
+	<libmftypes.h>
+	"../COMMON/misc.h"
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+
+1466668188 source:d:\workspaces\tp20ms\ms\main.c
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+	"../COMMON/eeprom.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+	<libmfradio.h>
+	<libmfflash.h>
+	<libmfwtimer.h>
+	<math.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/libminidvkled.h"
+	<libdvk2leds.h>
+	<stdlib.h>
+	<string.h>
+	"../COMMON/misc.h"
+	"../COMMON/configcommon.h"
+
+1463645244 d:\workspaces\tp20ms\common\libminidvkled.h
+	"libmftypes.h"
+
+1463645244 d:\workspaces\tp20ms\common\configcommon.h
+
+1466406046 source:d:\workspaces\tp20ms\common\eeprom.c
+	<stdlib.h>
+	<string.h>
+	"eeprom.h"
+
+1466059726 d:\workspaces\tp20ms\common\eeprom.h
+	"../AX_Radio_Lab_output/configms.h"
+	"libmftypes.h"
+	"ax8052.h"
+	"misc.h"
+
+1470795265 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ax_radio_lab_output\config.c
+	"../COMMON/easyax5043.h"
+	<libmftypes.h>
+	<libmfcrc.h>
+
+1470121024 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\easyax5043.h
+	"axradio.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+
+1464999971 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\axradio.h
+	<libmftypes.h>
+
+1470365872 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ax_radio_lab_output\configms.c
+	"configms.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+
+1470714558 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ax_radio_lab_output\configms.h
+	"../COMMON/axradio.h"
+
+1464937152 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ax_radio_lab_output\configvcocal.c
+	"libmftypes.h"
+
+1470186946 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\display_com0.c
+	"display_com0.h"
+	<ax8052f143.h>
+	<libmf.h>
+	<libmfuart.h>
+	<libmfuart0.h>
+
+1467611247 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\display_com0.h
+	<libmf.h>
+
+1470121009 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\easyax5043.c
+	"easyax5043.h"
+	<libmfcrc.h>
+	<libmfradio.h>
+	<libmfwtimer.h>
+	<stdlib.h>
+	<string.h>
+	<libmfdbglink.h>
+
+1469501278 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\eeprom.c
+	<stdlib.h>
+	<string.h>
+	"eeprom.h"
+
+1470789048 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\eeprom.h
+	"../AX_Radio_Lab_output/configms.h"
+	"libmftypes.h"
+	"ax8052.h"
+	"misc.h"
+
+1463645244 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\misc.h
+	<libmftypes.h>
+	"../COMMON/axradio.h"
+
+1463645244 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\misc.c
+	<ax8052.h>
+	<libmftypes.h>
+	<libmfwtimer.h>
+	<libaxlcd2.h>
+	"misc.h"
+	"../COMMON/axradio.h"
+	"display_com0.h"
+
+1468922261 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ms\display_ms.c
+	"../AX_Radio_Lab_output/configms.h"
+	<ax8052.h>
+	<libmftypes.h>
+	<libaxlcd2.h>
+	<libmfwtimer.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/misc.h"
+
+1468922906 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ms\lposc_ms.c
+	<ax8052f143.h>
+	<libmftypes.h>
+	"../COMMON/misc.h"
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+
+1470795273 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ms\main.c
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+	"../COMMON/eeprom.h"
+	"../COMMON/adc.h"
+	"moto.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+	<libmfradio.h>
+	<libmfflash.h>
+	<libmfwtimer.h>
+	<math.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/libminidvkled.h"
+	<libdvk2leds.h>
+	"../COMMON/libminidvkled.h"
+	<stdlib.h>
+	<string.h>
+	"../COMMON/misc.h"
+	"../COMMON/configcommon.h"
+
+1463645244 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\libminidvkled.h
+	"libmftypes.h"
+
+1463645244 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\configcommon.h
+
+1469509680 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ms\moto.h
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/display_com0.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+	"../COMMON/misc.h"
+
+1470215992 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\ms\moto.c
+	<string.h>
+	"moto.h"
+	<libmfuart0.h>
+
+1469171764 source:i:\dropbox\adi\德國香腸\tp20ms\ax_radio_lab_output\config.c
+	"../COMMON/easyax5043.h"
+	<libmftypes.h>
+	<libmfcrc.h>
+
+1466732360 i:\dropbox\adi\德國香腸\tp20ms\common\easyax5043.h
+	"axradio.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+
+1464999971 i:\dropbox\adi\德國香腸\tp20ms\common\axradio.h
+	<libmftypes.h>
+
+1468253734 source:i:\dropbox\adi\德國香腸\tp20ms\ax_radio_lab_output\configms.c
+	"configms.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+
+1469173115 i:\dropbox\adi\德國香腸\tp20ms\ax_radio_lab_output\configms.h
+	"../COMMON/axradio.h"
+
+1464937152 source:i:\dropbox\adi\德國香腸\tp20ms\ax_radio_lab_output\configvcocal.c
+	"libmftypes.h"
+
+1467612616 source:i:\dropbox\adi\德國香腸\tp20ms\common\display_com0.c
+	"display_com0.h"
+	<ax8052f143.h>
+	<libmf.h>
+	<libmfuart.h>
+	<libmfuart0.h>
+
+1467611247 i:\dropbox\adi\德國香腸\tp20ms\common\display_com0.h
+	<libmf.h>
+
+1468921397 source:i:\dropbox\adi\德國香腸\tp20ms\common\easyax5043.c
+	"easyax5043.h"
+	<libmfcrc.h>
+	<libmfradio.h>
+	<libmfwtimer.h>
+	<stdlib.h>
+	<string.h>
+	<libmfdbglink.h>
+
+1466988271 source:i:\dropbox\adi\德國香腸\tp20ms\common\eeprom.c
+	<stdlib.h>
+	<string.h>
+	"eeprom.h"
+
+1467690421 i:\dropbox\adi\德國香腸\tp20ms\common\eeprom.h
+	"../AX_Radio_Lab_output/configms.h"
+	"libmftypes.h"
+	"ax8052.h"
+	"misc.h"
+
+1463645244 i:\dropbox\adi\德國香腸\tp20ms\common\misc.h
+	<libmftypes.h>
+	"../COMMON/axradio.h"
+
+1463645244 source:i:\dropbox\adi\德國香腸\tp20ms\common\misc.c
+	<ax8052.h>
+	<libmftypes.h>
+	<libmfwtimer.h>
+	<libaxlcd2.h>
+	"misc.h"
+	"../COMMON/axradio.h"
+	"display_com0.h"
+
+1468922261 source:i:\dropbox\adi\德國香腸\tp20ms\ms\display_ms.c
+	"../AX_Radio_Lab_output/configms.h"
+	<ax8052.h>
+	<libmftypes.h>
+	<libaxlcd2.h>
+	<libmfwtimer.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/misc.h"
+
+1468922906 source:i:\dropbox\adi\德國香腸\tp20ms\ms\lposc_ms.c
+	<ax8052f143.h>
+	<libmftypes.h>
+	"../COMMON/misc.h"
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+
+1469373509 source:i:\dropbox\adi\德國香腸\tp20ms\ms\main.c
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+	"../COMMON/eeprom.h"
+	"../COMMON/adc.h"
+	"moto.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+	<libmfradio.h>
+	<libmfflash.h>
+	<libmfwtimer.h>
+	<math.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/libminidvkled.h"
+	<libdvk2leds.h>
+	"../COMMON/libminidvkled.h"
+	<stdlib.h>
+	<string.h>
+	"../COMMON/misc.h"
+	"../COMMON/configcommon.h"
+
+1468480377 i:\dropbox\adi\德國香腸\tp20ms\ms\moto.h
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/display_com0.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+	"../COMMON/misc.h"
+
+1463645244 i:\dropbox\adi\德國香腸\tp20ms\common\libminidvkled.h
+	"libmftypes.h"
+
+1463645244 i:\dropbox\adi\德國香腸\tp20ms\common\configcommon.h
+
+1468227671 source:i:\dropbox\adi\德國香腸\tp20ms\ms\moto.c
+	<string.h>
+	"moto.h"
+	<libmfuart0.h>
+
+1466994857 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\watchdog.c
+	"WATCHDOG.h"
+
+1466997000 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\watchdog.h
+	<ax8052.h>
+	"../AX_Radio_Lab_output/configms.h"
+	<libmf.h>
+	"irq.h"
+
+1466996995 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\irq.h
+
+1467195409 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ax_radio_lab_output\config.c
+	"../COMMON/easyax5043.h"
+	<libmftypes.h>
+	<libmfcrc.h>
+
+1466732360 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\easyax5043.h
+	"axradio.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+
+1464999971 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\axradio.h
+	<libmftypes.h>
+
+1467161650 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ax_radio_lab_output\configms.c
+	"configms.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+
+1467162609 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ax_radio_lab_output\configms.h
+	"../COMMON/axradio.h"
+
+1464937152 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ax_radio_lab_output\configvcocal.c
+	"libmftypes.h"
+
+1463728112 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\display_com0.c
+	"display_com0.h"
+	<ax8052f143.h>
+	<libmf.h>
+	<libmfuart.h>
+	<libmfuart0.h>
+
+1463645244 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\display_com0.h
+	<libmf.h>
+
+1467015575 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\easyax5043.c
+	"easyax5043.h"
+	<libmfcrc.h>
+	<libmfradio.h>
+	<libmfwtimer.h>
+	<stdlib.h>
+	<string.h>
+	<libmfdbglink.h>
+
+1466988271 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\eeprom.c
+	<stdlib.h>
+	<string.h>
+	"eeprom.h"
+
+1466763465 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\eeprom.h
+	"../AX_Radio_Lab_output/configms.h"
+	"libmftypes.h"
+	"ax8052.h"
+	"misc.h"
+
+1463645244 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\misc.h
+	<libmftypes.h>
+	"../COMMON/axradio.h"
+
+1463645244 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\misc.c
+	<ax8052.h>
+	<libmftypes.h>
+	<libmfwtimer.h>
+	<libaxlcd2.h>
+	"misc.h"
+	"../COMMON/axradio.h"
+	"display_com0.h"
+
+1464750935 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ms\display_ms.c
+	"../AX_Radio_Lab_output/configms.h"
+	<ax8052.h>
+	<libmftypes.h>
+	<libaxlcd2.h>
+	<libmfwtimer.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/misc.h"
+
+1464750916 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ms\lposc_ms.c
+	<ax8052f143.h>
+	<libmftypes.h>
+	"../COMMON/misc.h"
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+
+1467192507 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ms\main.c
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+	"../COMMON/eeprom.h"
+	"moto.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+	<libmfradio.h>
+	<libmfflash.h>
+	<libmfwtimer.h>
+	<math.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/libminidvkled.h"
+	<libdvk2leds.h>
+	"../COMMON/libminidvkled.h"
+	<stdlib.h>
+	<string.h>
+	"../COMMON/misc.h"
+	"../COMMON/configcommon.h"
+
+1467104515 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ms\moto.h
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/display_com0.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+
+1463645244 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\libminidvkled.h
+	"libmftypes.h"
+
+1463645244 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\common\configcommon.h
+
+1467104576 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\tp20ms_20160629\ms\moto.c
+	<string.h>
+	"moto.h"
+	<libmfuart0.h>
+
+1470105150 source:c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\adc.c
+	"adc.h"
+	<stdio.h>
+
+1469150882 c:\users\d00124\dropbox\adi\德國香腸\tp20ms\common\adc.h
+	<ax8052f143.h>
+	<libmf.h>
+	<libmfadc.h>
+	<libmftypes.h>
+	<libmfuart0.h>
+	"../COMMON/misc.h"
+	"../COMMON/display_com0.h"
+
+1469156556 source:i:\dropbox\adi\德國香腸\tp20ms\common\adc.c
+	"adc.h"
+	<stdio.h>
+
+1469150882 i:\dropbox\adi\德國香腸\tp20ms\common\adc.h
+	<ax8052f143.h>
+	<libmf.h>
+	<libmfadc.h>
+	<libmftypes.h>
+	<libmfuart0.h>
+	"../COMMON/misc.h"
+	"../COMMON/display_com0.h"
+
+1468922906 source:c:\users\d00124\google drive\adi\running\tp20ms\ms\lposc_ms.c
+	<ax8052f143.h>
+	<libmftypes.h>
+	"../COMMON/misc.h"
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+
+1463645244 c:\users\d00124\google drive\adi\running\tp20ms\common\misc.h
+	<libmftypes.h>
+	"../COMMON/axradio.h"
+
+1464999971 c:\users\d00124\google drive\adi\running\tp20ms\common\axradio.h
+	<libmftypes.h>
+
+1470714558 c:\users\d00124\google drive\adi\running\tp20ms\ax_radio_lab_output\configms.h
+	"../COMMON/axradio.h"
+
+1470121024 c:\users\d00124\google drive\adi\running\tp20ms\common\easyax5043.h
+	"axradio.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+
+1470795265 source:c:\users\d00124\google drive\adi\running\tp20ms\ax_radio_lab_output\config.c
+	"../COMMON/easyax5043.h"
+	<libmftypes.h>
+	<libmfcrc.h>
+
+1470365872 source:c:\users\d00124\google drive\adi\running\tp20ms\ax_radio_lab_output\configms.c
+	"configms.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+
+1464937152 source:c:\users\d00124\google drive\adi\running\tp20ms\ax_radio_lab_output\configvcocal.c
+	"libmftypes.h"
+
+1470105150 source:c:\users\d00124\google drive\adi\running\tp20ms\common\adc.c
+	"adc.h"
+	<stdio.h>
+
+1469150882 c:\users\d00124\google drive\adi\running\tp20ms\common\adc.h
+	<ax8052f143.h>
+	<libmf.h>
+	<libmfadc.h>
+	<libmftypes.h>
+	<libmfuart0.h>
+	"../COMMON/misc.h"
+	"../COMMON/display_com0.h"
+
+1467611247 c:\users\d00124\google drive\adi\running\tp20ms\common\display_com0.h
+	<libmf.h>
+
+1470186946 source:c:\users\d00124\google drive\adi\running\tp20ms\common\display_com0.c
+	"display_com0.h"
+	<ax8052f143.h>
+	<libmf.h>
+	<libmfuart.h>
+	<libmfuart0.h>
+
+1470121009 source:c:\users\d00124\google drive\adi\running\tp20ms\common\easyax5043.c
+	"easyax5043.h"
+	<libmfcrc.h>
+	<libmfradio.h>
+	<libmfwtimer.h>
+	<stdlib.h>
+	<string.h>
+	<libmfdbglink.h>
+
+1469501278 source:c:\users\d00124\google drive\adi\running\tp20ms\common\eeprom.c
+	<stdlib.h>
+	<string.h>
+	"eeprom.h"
+
+1470789048 c:\users\d00124\google drive\adi\running\tp20ms\common\eeprom.h
+	"../AX_Radio_Lab_output/configms.h"
+	"libmftypes.h"
+	"ax8052.h"
+	"misc.h"
+
+1463645244 source:c:\users\d00124\google drive\adi\running\tp20ms\common\misc.c
+	<ax8052.h>
+	<libmftypes.h>
+	<libmfwtimer.h>
+	<libaxlcd2.h>
+	"misc.h"
+	"../COMMON/axradio.h"
+	"display_com0.h"
+
+1468922261 source:c:\users\d00124\google drive\adi\running\tp20ms\ms\display_ms.c
+	"../AX_Radio_Lab_output/configms.h"
+	<ax8052.h>
+	<libmftypes.h>
+	<libaxlcd2.h>
+	<libmfwtimer.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/misc.h"
+
+1470795273 source:c:\users\d00124\google drive\adi\running\tp20ms\ms\main.c
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/easyax5043.h"
+	"../COMMON/eeprom.h"
+	"../COMMON/adc.h"
+	"moto.h"
+	<ax8052f143.h>
+	<libmftypes.h>
+	<libmfradio.h>
+	<libmfflash.h>
+	<libmfwtimer.h>
+	<math.h>
+	<libmfuart0.h>
+	<libaxlcd2.h>
+	<libmfdbglink.h>
+	"../COMMON/display_com0.h"
+	"../COMMON/libminidvkled.h"
+	<libdvk2leds.h>
+	"../COMMON/libminidvkled.h"
+	<stdlib.h>
+	<string.h>
+	"../COMMON/misc.h"
+	"../COMMON/configcommon.h"
+
+1490060647 c:\users\d00124\google drive\adi\running\tp20ms\ms\moto.h
+	"../AX_Radio_Lab_output/configms.h"
+	"../COMMON/display_com0.h"
+	"../COMMON/axradio.h"
+	"../COMMON/easyax5043.h"
+	"../COMMON/misc.h"
+
+1463645244 c:\users\d00124\google drive\adi\running\tp20ms\common\libminidvkled.h
+	"libmftypes.h"
+
+1463645244 c:\users\d00124\google drive\adi\running\tp20ms\common\configcommon.h
+
+1470215992 source:c:\users\d00124\google drive\adi\running\tp20ms\ms\moto.c
+	<string.h>
+	"moto.h"
+	<libmfuart0.h>
+

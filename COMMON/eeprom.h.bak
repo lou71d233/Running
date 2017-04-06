@@ -1,0 +1,85 @@
+#ifndef EEPROM_H_INCLUDED
+#define EEPROM_H_INCLUDED
+
+
+#include "../AX_Radio_Lab_output/configms.h"
+#include "libmftypes.h"
+#include "ax8052.h"
+
+//#define EE_TP10
+/*
+#ifdef EE_TP10
+
+// default TP10
+#define SDAPIN PINA_0
+#define CLKPIN PINA_1
+
+#define SDADIR DIRA
+#define CLKDIR DIRA
+
+#define SDAPIN_N BIT0SET
+#define CLKPIN_N BIT1SET
+
+#define SDAPORT_N PORTA_0
+#define CLKPORT_N PORTA_1
+
+#else
+// sample test
+*/
+#define SDAPIN PINC_0
+#define CLKPIN PINC_1
+
+#define SDADIR DIRC
+#define CLKDIR DIRC
+
+#define SDAPIN_N BIT0SET
+#define CLKPIN_N BIT1SET
+
+#define SDAPORT PORTC
+#define CLKPORT PORTC
+
+#define SDAPORT_N PORTC_0
+#define CLKPORT_N PORTC_1
+
+//#endif
+
+#define SET 1
+#define CLR 0
+
+#define ep_sda_r			SDAPIN
+#define ep_clk_r			CLKPIN
+#define ep_sda_w(x)		do {	SDAPORT_N = (x);} while (0)
+#define ep_clk_w(x)		do {	CLKPORT_N = (x);} while (0)
+
+//#define ep_sda_w_set		do {	SDAPIN = (x);} while (0)
+#define ep_clk_w_set()	do	{CLKPORT |= BIT0SET;}//do {	ep_clk_w(1);} while (0)
+#define ep_clk_w_clr()	do	{CLKPORT &= BIT1CLR;}//do {	ep_clk_w(0);} while (0)
+
+#define ep_clk_tg()		do { 	CLKPORT ^= CLKPIN_N; } while (0)
+
+//PORT DIRECTION CONTROL
+#define ep_sda_d(x) (x)?(SDADIR|=BIT0SET):(SDADIR&=BIT0CLR)
+#define ep_clk_d(x) (x)?(CLKDIR|=BIT0SET):(CLKDIR&=BIT0CLR)
+
+//DIR PULL-UP
+#define ep_sda_pu(x)	do { SDADIR &= SDAPIN_N; SDAPORT_N = (x);} while (0)
+#define ep_clk_pu(x)	do { CLKDIR &= CLKPIN_N; CLKPORT_N = (x);} while (0)
+
+
+void Ep_start(void);
+void Ep_stop(void);
+void sendack(void);
+void sendnoack(void);
+void Ep_err_check(void);
+void ack(void);
+
+extern  void wri_ep1b(uint8_t da) ;
+extern  void wri_subp(uint8_t DeviceAddr,uint16_t addr,uint8_t wrida) ;
+extern  void ep_pagew(uint8_t DeviceAddr,uint16_t addr,const uint8_t *Txbuf,uint8_t num) ;
+extern  uint8_t read_ep1b(void) ;
+extern  void read_subp(uint8_t DeviceAddr,uint16_t addr) ;
+extern  void ep_pager(uint8_t DeviceAddr,uint16_t addr,uint8_t *daddr,uint8_t num) ;
+
+
+
+#endif // EEPROM_H_INCLUDED

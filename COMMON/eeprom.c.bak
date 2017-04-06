@@ -1,0 +1,290 @@
+
+#include <stdlib.h>
+#include <string.h>
+
+#include "eeprom.h"
+
+uint8_t eprd_da=0;
+uint8_t	Ep_err;
+
+
+/*************************************************
+*        EP start
+*************************************************/
+void Ep_start(void)
+{
+
+    ep_cs_w_set();
+    NOP();
+    ep_sda_w_clr();
+    //NOP();
+    ep_clk_w_clr();
+
+}
+
+
+/*************************************************
+*        EP stop
+*************************************************/
+
+void Ep_stop(void)
+{
+    ep_sda_w_clr();
+	NOP();
+	ep_clk_w_set();
+	NOP();
+	ep_sda_w_set();
+	NOP();
+}
+
+/*************************************************
+*        EP aned ack
+*************************************************/
+
+void sendack(void)
+{
+    ep_ack_w_dhcl();
+}
+
+/*************************************************
+*        EP send no ack
+*************************************************/
+
+void sendnoack(void)
+{
+    ep_ack_w_chdl();
+}
+
+/*************************************************
+*        EP err check
+*************************************************/
+
+void Ep_err_check(void)
+{
+	if(Ep_err==SET)
+	{	/*showEp_Err();*/ while(1);	}
+	else
+	if(Ep_err==CLR)
+	{	NOP();	}
+}
+
+/*************************************************
+*        Write 1byte data to Ep
+*************************************************/
+
+void wri_ep_add(uint8_t da,uint8_t wr)
+{
+	uint8_t i=8;uint8_t datmp=0;uint8_t err_cou=0;
+
+    datmp=da;
+
+    for(i=0;i<7;i++)
+    {
+        if(datmp & 0x80)
+            {ep_sda_w_set();}
+        else
+            {ep_sda_w_clr();}
+
+        ep_clk_w_set();
+        NOP();
+        ep_clk_w_clr();
+
+        datmp = datmp<<1;
+    }
+
+    if(wr==0){
+        ep_ack_w_dhcl();
+        ep_clk_w_clr();
+    }else{
+        ep_ack_w_chdl();
+        ep_clk_w_clr();
+    }
+    NOP();
+    ep_cs_w_clr();
+}
+
+
+/*************************************************
+*        Write 1byte data to Ep
+*************************************************/
+
+ void wri_ep1b(uint8_t da)
+{
+	uint8_t i=8;uint8_t datmp=0;uint8_t err_cou=0;
+
+    datmp=da;
+
+    ep_clk_w_clr();
+
+    for(i=0;i<8;i++)
+    {
+        if(datmp & 0x80)
+            {ep_sda_w_set();}
+        else
+            {ep_sda_w_clr();}
+
+        ep_clk_w_set();
+        NOP();
+        ep_clk_w_clr();
+
+        datmp = datmp<<1;
+    }
+
+    NOP();
+    ep_cs_w_clr();
+
+    Ep_err=CLR;
+
+}
+
+
+/*************************************************
+*	   get addr Write 1byte to Ep
+*************************************************/
+ void wri_subp(uint8_t DeviceAddr,uint16_t addr,uint8_t wrida)
+{
+  uint8_t addrh,addrl;
+
+	addrh = addr >> 8;
+	addrl = addr & 0xFF;
+
+	Ep_start();
+
+	wri_ep_add(0x50,0);
+    sendack();
+	wri_ep1b(addrh);
+    sendack();
+	wri_ep1b(addrl);
+    sendack();
+	wri_ep1b(wrida);
+    sendack();
+
+	Ep_stop();
+
+}
+
+/*************************************************
+*		Page Wrtie to Ep
+*************************************************/
+
+ void ep_pagew(uint8_t DeviceAddr,uint16_t addr,const uint8_t *Txbuf,uint8_t num)
+{
+	uint8_t i,addrh,addrl;
+
+	addrh = addr >> 8;
+	addrl = addr & 0xFF;
+
+	Ep_start();
+
+	wri_ep_add(0x50,0);
+    sendack();
+	wri_ep1b(addrh);
+    sendack();
+	wri_ep1b(addrl);
+    sendack();
+
+	for(i=num;i>0;i--)
+	{
+		wri_ep1b(*Txbuf++);
+		sendack();
+	}
+
+	Ep_stop();
+
+}
+
+/*************************************************
+*        Read 1byte data from Ep
+*************************************************/
+ uint8_t read_ep1b(void)
+{
+	uint8_t i;
+	eprd_da=0;
+
+    SDADIR|=BIT0SET;CLKPORT&=BIT0CLR;
+    CLKDIR&=BIT1CLR;SDAPORT|=BIT1SET;
+
+    ep_clk_w_clr();
+
+    for(i=0;i<8;i++)
+    {
+      ep_sda_w_set();
+      NOP();
+      ep_clk_w_set();
+      NOP();
+      eprd_da=eprd_da<<1;
+      eprd_da=eprd_da|ep_sda_r;
+      NOP();
+      ep_clk_w_clr();
+     }
+    return(eprd_da);
+}
+
+/*************************************************
+*		give addr read 1byte data from Ep
+*************************************************/
+ void read_subp(uint8_t DeviceAddr,uint16_t addr)
+{
+  uint8_t addrh,addrl;
+
+	addrh = addr >> 8;
+	addrl = addr & 0xFF;
+
+	Ep_start();
+
+	wri_ep1b(0x50);
+
+	wri_ep1b(addrh);
+
+	wri_ep1b(addrl);
+
+	Ep_start();
+
+	wri_ep1b(0x51);
+	//wri_ep1b(0xA0);
+
+	read_ep1b();
+
+	Ep_stop();
+
+	NOP();NOP();NOP();
+
+}
+
+/*************************************************
+*		Page Read from Ep
+*************************************************/
+ void ep_pager(uint8_t DeviceAddr,uint16_t addr,uint8_t *daddr,uint8_t num)
+{
+  uint8_t j,addrh,addrl;
+
+	addrh = addr >> 8;
+	addrl = addr & 0xFF;
+
+	Ep_start();
+
+ 	wri_ep1b(0x50);
+	wri_ep1b(addrh);
+ 	wri_ep1b(addrl);
+ 	Ep_start();
+ 	wri_ep1b(0x51);
+
+	for(j=0;j<num;j++)
+	{
+		*daddr++=read_ep1b();
+		//rep_tmp[j] = read_ep1b();
+		eprd_da=0;
+		if(j!=num-1)
+			sendack();
+		else
+			sendnoack();
+ 	}
+	//rep_tmp[j] = read_ep1b();
+	//sendnoack();
+	sendack();
+	eprd_da=0;
+	Ep_stop();
+
+}
+
+
